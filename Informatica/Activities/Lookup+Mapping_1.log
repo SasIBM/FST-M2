@@ -1,0 +1,256 @@
+Agent Group Id: 025000000000002
+Agent Group Name: Informatica Cloud Hosted Agent
+Agent Id: 00800000000004F
+Task Name: Lookup Mapping
+Task Type: MTT_TEST
+Task Id: 012FV20Z000000000004
+Run Id: 1
+Service Id: 1287392
+Started By: sasmita.puhan@ibm.com
+Run Context Type: ICS_UI
+02/02/2024 01:25:29 **** Importing Connection: Conn_012FV20B000000000003 ...
+02/02/2024 01:25:29 **** Importing Source Definition: Phone_Sales_Record ...
+02/02/2024 01:25:29 **** Importing Target Definition: Sasmita_sales_record ...
+02/02/2024 01:25:29 **** Importing SessionConfig: default_session_config ...
+    <Warning> :  The Error Log DB Connection value should have Relational: as the prefix.
+    <Warning> :  Invalid value  for attribute Error Log DB Connection. Will use the default value 
+    Validating Source Definition  Phone_Sales_Record...
+    Validating Target Definition  Sasmita_sales_record...
+02/02/2024 01:25:29 **** Importing Mapping: Mapping0 ...
+    <Warning> :  transformation: Source - Invalid value  for attribute Output is repeatable. Will use the default value Never    [transformation< Source > ] 
+Validating transformations of mapping Mapping0...
+Validating mapping variable(s).
+02/02/2024 01:25:29 **** Importing Workflow: wf_mtt_012FV20Z000000000004 ...
+    <Warning> :  Invalid value None for attribute Pushdown Optimization Context. Will use the default value None     [Session< s_mtt_012FV20Z000000000004 > ] 
+    <Warning> :  The value entered is not a valid integer.
+    <Warning> :  Invalid value NO for attribute Fail task after wait time. Will use the default value 
+Successfully extracted session instance [s_mtt_012FV20Z000000000004].  Starting repository sequence id is [-469326909]
+DIRECTOR> VAR_27085 [2024-02-02 01:25:29.835] Parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012FV20E0000000000B5/012FV2/parameters/s_mtt_012FV20Z000000000004.param] is opened for [session [wf_mtt_012FV20Z000000000004.s_mtt_012FV20Z000000000004]].
+DIRECTOR> VAR_27062 [2024-02-02 01:25:29.835] Warning! Cannot find section for worklet [wf_mtt_012FV20Z000000000004] and folder [] in parameter file [/data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012FV20E0000000000B5/012FV2/parameters/s_mtt_012FV20Z000000000004.param].
+DIRECTOR> TM_6014 [2024-02-02 01:25:29.836] Initializing session [s_mtt_012FV20Z000000000004] at [Fri Feb 02 01:25:29 2024].
+DIRECTOR> TM_6683 [2024-02-02 01:25:29.836] Repository Name: [XMLRepository]
+DIRECTOR> TM_6684 [2024-02-02 01:25:29.836] Server Name: [rDTM]
+DIRECTOR> TM_6686 [2024-02-02 01:25:29.836] Folder: []
+DIRECTOR> TM_6685 [2024-02-02 01:25:29.836] Workflow: [wf_mtt_012FV20Z000000000004] Run Instance Name: [] Run Id: [0]
+DIRECTOR> TM_6992 [2024-02-02 01:25:29.836] Operating System Type [Linux]
+DIRECTOR> TM_6101 [2024-02-02 01:25:29.836] Mapping name: Mapping0.
+DIRECTOR> TM_6964 [2024-02-02 01:25:29.836] Date format for the Session is [MM/DD/YYYY HH24:MI:SS.US]
+DIRECTOR> TM_6703 [2024-02-02 01:25:29.836] Session [s_mtt_012FV20Z000000000004] is run by 64-bit Integration Service  [], version [10.2.0 HotFix2], build [0320].
+MANAGER> PETL_24091 [2024-02-02 01:25:29.848] Thread [MANAGER] has the ID [1].
+MANAGER> PETL_24058 [2024-02-02 01:25:29.849] Running Partition Group [1].
+MANAGER> PETL_24000 [2024-02-02 01:25:29.849] Parallel Pipeline Engine initializing.
+MONITOR> PETL_24091 [2024-02-02 01:25:29.849] Thread [MONITOR] has the ID [2].
+MANAGER> PETL_24001 [2024-02-02 01:25:29.849] Parallel Pipeline Engine running.
+MANAGER> PETL_24003 [2024-02-02 01:25:29.849] Initializing session run.
+MAPPING> PETL_24091 [2024-02-02 01:25:29.850] Thread [MAPPING] has the ID [3].
+MAPPING> CMN_1569 [2024-02-02 01:25:29.852] Server Mode: [UNICODE]
+MAPPING> CMN_1570 [2024-02-02 01:25:29.852] Server Code page: [ISO 8859-1 Western European]
+MAPPING> TM_6151 [2024-02-02 01:25:29.852] The session sort order is [Binary].
+MAPPING> TM_6185 [2024-02-02 01:25:29.852] Warning. Code page validation is disabled in this session.
+MAPPING> CMN_65110 [2024-02-02 01:25:29.852] Current Timezone:[UTC -5:0]
+MAPPING> CMN_65111 [2024-02-02 01:25:29.852] Current Process ID:[31823]
+MAPPING> TM_6155 [2024-02-02 01:25:29.852] Using HIGH precision processing.
+MAPPING> TM_6180 [2024-02-02 01:25:29.852] Deadlock retry logic will not be implemented.
+MAPPING> TM_6187 [2024-02-02 01:25:29.852] Session target-based commit interval is [10000].
+MAPPING> TM_6307 [2024-02-02 01:25:29.852] DTM error log disabled. 
+MAPPING> TE_7022 [2024-02-02 01:25:29.853] TShmWriter: Initialized
+MAPPING> DBG_21075 [2024-02-02 01:25:29.857] Connecting to database [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db]
+MAPPING> CMN_1021 [2024-02-02 01:25:32.507] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.3.0
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+MAPPING> CMN_1716 [2024-02-02 01:25:32.507] Lookup [Lookup] uses database connection [Relational:Conn_012FV20B000000000003] in code page [UTF-8 encoding of Unicode]
+MAPPING> TM_6007 [2024-02-02 01:25:32.508] DTM initialized successfully for session [s_mtt_012FV20Z000000000004]
+DIRECTOR> PETL_24033 [2024-02-02 01:25:32.799] All DTM Connection Info: [<NONE>].
+MANAGER> PETL_24004 [2024-02-02 01:25:32.799] Starting pre-session tasks. : (Fri Feb 02 01:25:32 2024)
+PRE-SESS> PETL_24091 [2024-02-02 01:25:32.799] Thread [PRE-SESS] has the ID [4].
+MANAGER> PETL_24027 [2024-02-02 01:25:32.800] Pre-session task completed successfully. : (Fri Feb 02 01:25:32 2024)
+DIRECTOR> PETL_24006 [2024-02-02 01:25:32.801] Starting data movement.
+DIRECTOR> TT_11183 [2024-02-02 01:25:32.801] Enabled using [1 (auto)] additional concurrent pipelines to build lookup caches. (Session likely will build or refresh [1] lookup caches; [0] on-demand only).
+MAPPING> TM_6660 [2024-02-02 01:25:32.801] Total Buffer Pool size is 11302240 bytes and Block size is 625680 bytes.
+LKPDP_1> PETL_24091 [2024-02-02 01:25:32.802] Thread [LKPDP_1] has the ID [5].
+LKPDP_1> DBG_21097 [2024-02-02 01:25:32.802] Lookup Transformation [Lookup]: Default sql to create lookup cache: SELECT Prod_Name,Prod_Desc,Prod_Price,Prod_ID FROM "fstm4db"."Phones" ORDER BY Prod_ID
+
+LKPDP_1> TE_7212 [2024-02-02 01:25:32.803] Increasing [Index Cache] size for transformation [Lookup] from [139469960] to [139470800].
+LKPDP_1> TE_7212 [2024-02-02 01:25:32.803] Increasing [Data Cache] size for transformation [Lookup] from [278939920] to [278945792].
+DIRECTOR> TT_11184 [2024-02-02 01:25:32.815] Starting additional concurrent pipeline to build the lookup cache needed by Lookup transformation [Lookup].
+READER_1_1_1> PETL_24091 [2024-02-02 01:25:32.816] Thread [READER_1_1_1] has the ID [6].
+READER_1_1_1> DBG_21438 [2024-02-02 01:25:32.817] Reader: Source is [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db]
+LKPDP_1> TM_6660 [2024-02-02 01:25:32.817] Total Buffer Pool size is 609824 bytes and Block size is 65536 bytes.
+READER_1_1_1> BLKR_16051 [2024-02-02 01:25:32.817] Source database connection [Conn_012FV20B000000000003] code page: [UTF-8 encoding of Unicode]
+READER_1_1_1> CMN_1021 [2024-02-02 01:25:32.817] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+LKPDP_1:READER_1_1> PETL_24091 [2024-02-02 01:25:32.818] Thread [LKPDP_1:READER_1_1] has the ID [7].
+LKPDP_1:READER_1_1> DBG_21438 [2024-02-02 01:25:32.818] Reader: Source is [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db]
+LKPDP_1:READER_1_1> BLKR_16051 [2024-02-02 01:25:32.818] Source database connection [Conn_012FV20B000000000003] code page: [UTF-8 encoding of Unicode]
+LKPDP_1:READER_1_1> CMN_1021 [2024-02-02 01:25:32.818] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+READER_1_1_1> CMN_1021 [2024-02-02 01:25:35.387] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.3.0
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+READER_1_1_1> BLKR_16003 [2024-02-02 01:25:35.388] Initialization completed successfully.
+TRANSF_1_1_1> PETL_24091 [2024-02-02 01:25:35.388] Thread [TRANSF_1_1_1] has the ID [8].
+WRITER_1_*_1> PETL_24091 [2024-02-02 01:25:35.389] Thread [WRITER_1_*_1] has the ID [9].
+WRITER_1_*_1> WRT_8147 [2024-02-02 01:25:35.389] Writer: Target is Database [odbc://dbtype=MySQL;host=db4free.net;port=3306;database=fstm4db], Type [ODBC], User [fstm4db], Bulk Mode [OFF]
+WRITER_1_*_1> CMN_1021 [2024-02-02 01:25:35.389] Database driver event...
+CMN_1021 [Driver Manager used is [UnixODBC 2.3.4].]
+
+LKPDP_1:READER_1_1> CMN_1021 [2024-02-02 01:25:37.388] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.3.0
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+LKPDP_1:READER_1_1> BLKR_16003 [2024-02-02 01:25:37.388] Initialization completed successfully.
+LKPDP_1:TRANSF_1_1> PETL_24091 [2024-02-02 01:25:37.389] Thread [LKPDP_1:TRANSF_1_1] has the ID [10].
+LKPDP_1:READER_1_1> BLKR_16007 [2024-02-02 01:25:37.389] Reader run started.
+LKPDP_1:READER_1_1> RR_4049 [2024-02-02 01:25:37.389] SQL Query issued to database : (Fri Feb 02 01:25:37 2024)
+LKPDP_1:READER_1_1> RR_4050 [2024-02-02 01:25:37.676] First row returned from database to reader : (Fri Feb 02 01:25:37 2024)
+LKPDP_1:TRANSF_1_1> DBG_21079 [2024-02-02 01:25:37.676] Creating Lookup Cache : (Fri Feb 02 01:25:37 2024)
+LKPDP_1:READER_1_1> BLKR_16008 [2024-02-02 01:25:37.676] Reader run completed.
+LKPDP_1:TRANSF_1_1> DBG_21682 [2024-02-02 01:25:37.677] Lookup table row count : 100
+LKPDP_1:TRANSF_1_1> DBG_21297 [2024-02-02 01:25:37.677] Lookup cache row count : 100
+
+LKPDP_1:TRANSF_1_1> DBG_21294 [2024-02-02 01:25:37.677] Lookup cache creation completed : (Fri Feb 02 01:25:37 2024)
+LKPDP_1:TRANSF_1_1> CMN_1671 [2024-02-02 01:25:37.677] Created new cache files PMLKUP-469326881_4_0L64.[dat/idx] in directory /data2/home/cldagnt/SystemAgent/apps/Data_Integration_Server/data/012FV20E0000000000B5/012FV2/cache for Lookup [Lookup].
+LKPDP_1:TRANSF_1_1> DBG_21641 [2024-02-02 01:25:37.677] Lookup: Index cache size = [139470800], Data cache size = [278945792]
+LKPDP_1:TRANSF_1_1> DBG_21216 [2024-02-02 01:25:37.677] Finished transformations for Source Qualifier [Lookup{{DSQ}}]. Total errors [0] 
+DIRECTOR> TT_11185 [2024-02-02 01:25:37.963] No more lookup cache to build by additional concurrent pipeline in the current concurrent source set.
+WRITER_1_*_1> CMN_1021 [2024-02-02 01:25:39.534] Database driver event...
+CMN_1021 [ODBC Event Using array fetches.
+ODBC Event Using Single Row Inserts. connect string = [Driver=MySQL ODBC 8.0 Unicode Driver;Server=db4free.net;Database=fstm4db;Port=3306;USER=fstm4db;NO_SSPS=1;stmt=set time_zone = '+00:00';Charset=UTF8;OPTION=3;SSLMODE=DISABLED]. userid = [fstm4db]
+ODBC Version:	03.52
+.
+DBMS Name:	MySQL
+.
+DBMS Version:	8.3.0
+.
+Driver Name:	libmyodbc8w.so
+.
+Driver Version:	08.00.0012
+.
+Driver ODBC Version:	03.80
+.
+MySQL rewrite batch optimization is disabled with maximum bind parameter size set to 2500.]
+
+WRITER_1_*_1> WRT_8221 [2024-02-02 01:25:40.113] Target database connection [Conn_012FV20B000000000003] code page: [UTF-8 encoding of Unicode]
+WRITER_1_*_1> WRT_8124 [2024-02-02 01:25:40.114] Target Table Sasmita_sales_record :SQL INSERT statement:
+INSERT INTO fstm4db.Sasmita_sales_record(src_Prod_ID,src_Units,Prod_Name,Prod_Desc,Prod_Price)  VALUES ( ?, ?, ?, ?, ?) 
+WRITER_1_*_1> WRT_8020 [2024-02-02 01:25:40.114] No column marked as primary key for table [Sasmita_sales_record]. UPDATEs Not Supported.
+WRITER_1_*_1> WRT_8270 [2024-02-02 01:25:40.115] Target connection group #1 consists of target(s) [Sasmita_sales_record]
+WRITER_1_*_1> WRT_8003 [2024-02-02 01:25:40.115] Writer initialization complete.
+READER_1_1_1> BLKR_16007 [2024-02-02 01:25:40.115] Reader run started.
+WRITER_1_*_1> WRT_8005 [2024-02-02 01:25:40.115] Writer run started.
+WRITER_1_*_1> WRT_8158 [2024-02-02 01:25:40.115] 
+
+*****START LOAD SESSION*****
+
+Load Start Time: Fri Feb 02 01:25:39 2024
+
+Target tables:
+
+     Sasmita_sales_record
+
+
+READER_1_1_1> RR_4010 [2024-02-02 01:25:40.115] SQ instance [Source] SQL Query [SELECT fstm4db.Phone_Sales_Record.Transaction_Id, fstm4db.Phone_Sales_Record.Prod_ID, fstm4db.Phone_Sales_Record.Units FROM fstm4db.Phone_Sales_Record]
+READER_1_1_1> RR_4049 [2024-02-02 01:25:40.115] SQL Query issued to database : (Fri Feb 02 01:25:40 2024)
+READER_1_1_1> RR_4050 [2024-02-02 01:25:40.498] First row returned from database to reader : (Fri Feb 02 01:25:40 2024)
+READER_1_1_1> BLKR_16019 [2024-02-02 01:25:40.499] Read [50] rows, read [0] error rows for source table [Phone_Sales_Record] instance name [Phone_Sales_Record]
+READER_1_1_1> BLKR_16008 [2024-02-02 01:25:40.499] Reader run completed.
+TRANSF_1_1_1> DBG_21216 [2024-02-02 01:25:40.499] Finished transformations for Source Qualifier [Source]. Total errors [0] 
+WRITER_1_*_1> WRT_8167 [2024-02-02 01:25:40.499] Start loading table [Sasmita_sales_record] at: Fri Feb 02 01:25:39 2024
+WRITER_1_*_1> WRT_8168 [2024-02-02 01:25:42.170] End loading table [Sasmita_sales_record] at: Fri Feb 02 01:25:41 2024
+WRITER_1_*_1> WRT_8141 [2024-02-02 01:25:42.710] 
+Commit on end-of-data  Fri Feb 02 01:25:41 2024
+===================================================
+
+WRT_8036 Target: Sasmita_sales_record (Instance Name: [Sasmita_sales_record])
+WRT_8038 Inserted rows - Requested: 5          Applied: 5          Rejected: 0          Affected: 5         
+
+WRITER_1_*_1> WRT_8035 [2024-02-02 01:25:42.710] Load complete time: Fri Feb 02 01:25:41 2024
+
+LOAD SUMMARY
+============
+
+WRT_8036 Target: Sasmita_sales_record (Instance Name: [Sasmita_sales_record])
+WRT_8038 Inserted rows - Requested: 5          Applied: 5          Rejected: 0          Affected: 5         
+
+
+WRITER_1_*_1> WRT_8043 [2024-02-02 01:25:42.710] *****END LOAD SESSION*****
+WRITER_1_*_1> WRT_8006 [2024-02-02 01:25:43.003] Writer run completed.
+MANAGER> PETL_24031 [2024-02-02 01:25:43.003] 
+***** RUN INFO FOR TGT LOAD ORDER GROUP [1], CONCURRENT SET [1] *****
+Thread [READER_1_1_1] created for [the read stage] of partition point [Source] has completed.
+	Total Run Time = [0.668888] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+Thread [TRANSF_1_1_1] created for [the transformation stage] of partition point [Source] has completed. The total run time was insufficient for any meaningful statistics.
+Thread [WRITER_1_*_1] created for [the write stage] of partition point [Sasmita_sales_record] has completed.
+	Total Run Time = [2.503665] secs
+	Total Idle Time = [0.000000] secs
+	Busy Percentage = [100.000000]
+
+MAPPING> CMN_1793 [2024-02-02 01:25:43.004] The index cache size that would hold [100] rows in the lookup table for [Lookup], in memory, is [8400] bytes
+MAPPING> CMN_1792 [2024-02-02 01:25:43.004] The data cache size that would hold [100] rows in the lookup table for [Lookup], in memory, is [417792] bytes
+MANAGER> PETL_24005 [2024-02-02 01:25:43.005] Starting post-session tasks. : (Fri Feb 02 01:25:43 2024)
+POST-SESS> PETL_24091 [2024-02-02 01:25:43.005] Thread [POST-SESS] has the ID [11].
+MANAGER> PETL_24029 [2024-02-02 01:25:43.005] Post-session task completed successfully. : (Fri Feb 02 01:25:43 2024)
+MAPPING> TE_7216 [2024-02-02 01:25:43.007] Deleting cache files [PMLKUP-469326881_4_0L64] for transformation [Lookup].
+MAPPING> TM_6018 [2024-02-02 01:25:43.007] The session completed with [0] row transformation errors. 
+MANAGER> PETL_24002 [2024-02-02 01:25:43.831] Parallel Pipeline Engine finished.
+DIRECTOR> PETL_24012 [2024-02-02 01:25:43.831] Session run completed successfully.
+DIRECTOR> TM_6022 [2024-02-02 01:25:43.831] 
+
+SESSION LOAD SUMMARY
+================================================
+
+DIRECTOR> TM_6252 [2024-02-02 01:25:43.831] Source Load Summary.
+DIRECTOR> CMN_1740 [2024-02-02 01:25:43.831] Table: [Source] (Instance Name: [Source] Instance UI Name: [Source])
+	 Output Rows [50], Affected Rows [50], Applied Rows [50], Rejected Rows [0]
+DIRECTOR> TM_6253 [2024-02-02 01:25:43.831] Target Load Summary.
+DIRECTOR> CMN_1740 [2024-02-02 01:25:43.831] Table: [Sasmita_sales_record] (Instance Name: [Sasmita_sales_record] Instance UI Name: [Target])
+	 Output Rows [5], Affected Rows [5], Applied Rows [5], Rejected Rows [0]
+DIRECTOR> TM_6023 [2024-02-02 01:25:43.831] 
+===================================================
+
+DIRECTOR> TM_6020 [2024-02-02 01:25:43.831] Session [s_mtt_012FV20Z000000000004] completed at [Fri Feb 02 01:25:43 2024].
