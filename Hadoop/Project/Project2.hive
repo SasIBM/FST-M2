@@ -1,0 +1,9 @@
+drop table episode4;
+
+Create table episode4 (name STRING, line STRING)
+
+LOAD data local inpath'/root/inputs/episode4.txt' into table episode4;
+
+insert overwrite local directory '/root/hiveoutput2'
+select count (*) from episode4 where instr(line,'Luke')>0;
+

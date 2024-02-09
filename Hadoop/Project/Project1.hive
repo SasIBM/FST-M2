@@ -1,0 +1,12 @@
+Drop table episodes;
+
+Create table episodes (name STRING, line STRING) 
+
+LOAD data local inpath'/root/inputs/episode4.txt' into table episodes;
+LOAD data local inpath'/root/inputs/episode5.txt' into table episodes;
+LOAD data local inpath'/root/inputs/episode6.txt' into table episodes;
+
+
+Insert loact directory '/root/hivoutput1' row format delimited fields terminated by '\t'
+Select ame, count(name) as nooflines from episodes group by name oder by nooflines desc;
+
